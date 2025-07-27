@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* shared styles  */
+.display-flex {
+  display: flex;
+}
+
+/* dark02 */
+.text-grey {
+  color: #424242;
+}
+
+/* dark03 */
+.text-light-grey {
+  color: #727272;
+}
+
+.bg-light {
+    background-color: rgba(255, 145, 14, 0.1);
+}
+
+.btn-primary {
+  background-color: #FF900E;
+  color: white;
+  padding: 20px 25px;
+  font-size: 1.2rem; /* 1.2rem is very small, likely a typo, should be 12rem */
+  font-weight: 600;
+    border: none;
+    border-radius: 8px;
+}
+
+main {
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+main > section {
+  padding: 50px 0;
+  margin-top: 130px;
+}
+/* header styles */
+
+/* navbar related styles */
+
+.navbar {
+  
+  justify-content: space-between;
+    align-items: center;
+ 
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 3rem;  /* 1rem = 16px, so 3rem = 48px */
+}
+.nav-items {
+  list-style: none;
+  margin-right: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+ 
+}
+
+.navbar, .banner {
+ max-width: 1440px;
+    margin: 0 auto;
+  
+}
+
+/* banner-related styles */
+.banner-content {
+ max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title {
+  font-size: 3.5rem; /* 1rem = 16px, so 3.5rem = 56px */
+  font-weight: 700;
+}
+
+.banner-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* teams and feature related styles */
+.teams {
+  align-items: center;
+  gap: 20px;
+}
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.team-img-container img {
+  width: 100%;
+  height: auto;
+  margin-left: 130px;
+
+}
+.our-features {
+  margin-left: 130px;
+  max-width: 530px;
+}
+
+.feature-title {
+  font-size: 45px; /* 1rem = 16px, so 2.5rem = 40px */
+  font-weight: 700;
+}
+#quick-list {
+  color: #727272;
+}
+
+#of-our {
+  color: #131313;
+}
+#features {
+  color: #FF900E;
+}
+
+.feature-description {
+  font-size: 16px;
+  color: #727272;
+}
+
+/* some facts related style */
+.facts-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.feature-titles {
+  font-size: 45px; /* 1rem = 16px, so 2.5rem = 40px */
+  font-weight: 700;
+
+}
+
+.features-description {
+  font-size: 16px;
+  color: #727272;
+  margin-top: 20px;
+}
+
+.fact-card  {
+ border: 1px solid #FF900E;
+ border-radius: 8px;
+ width: 240px;
+  height: 240px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+
+}
+
+.fact-card h4 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.fact-card h5 {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.fact-description {
+  max-width: 540px;
+}
+
+
+/* sponsor related style  */
+.sponsor-info {
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.sponsor-companies 
+{
+  display: grid ;
+  grid-template-columns: repeat(5,1fr);
+}
+
+.sponsor-companies img{
+  filter: grayscale(100%);
+}
+
+
+
+
+
+
+
+
+
+/* responsive media query */
+
+@media screen and (max-width: 576px) {
+  .navbar, .nav-links , .teams {
+    flex-direction: column;
+    align-items: center;
+  }
+  .our-features {
+    margin-left: 10px;
+  }
+  .team-img-container, .facts-container , .sponsor-companies {
+    grid-template-columns: repeat(1, 1fr);
+    /* margin-left: 0px; */
+  }
+ .facts-container {
+  justify-items: center;
+ }
+
+ .sponsor-companies {
+  justify-items: center;
+  gap: 50px;
+
+ }
+
+  .team-img-container img {
+    margin-left: 0px;
+  }
+  
+}
+
+/* medium size sdevice  */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .navbar, .nav-links, .teams {
+    flex-direction: column;
+    align-items: center;
+  }
+  .our-features {
+    margin-left: 10px;
+   
+  }
+  .team-img-container {
+    grid-template-columns: repeat(2, 1fr);
+    /* margin-left: 0px; */
+  }
+  .team-img-container img {
+    margin-left: 0px;
+  }
+  .sponsor-companies 
+  {
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+  }
+}
+
