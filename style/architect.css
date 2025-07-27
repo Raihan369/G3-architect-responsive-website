@@ -253,7 +253,7 @@ main > section {
 /* footer style  */
 .footer 
 {
-  max-width: auto;
+  max-width: 1550px;
   height: 100px;
   background-color: #FFF4E7;
 }
